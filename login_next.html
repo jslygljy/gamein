@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>认证登陆</title>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <link rel='stylesheet' href='public/stylesheets/style.css' />
+    <link rel='stylesheet' href='public/stylesheets/base.css' />
+    <script type="text/javascript" src="public/javascripts/jquery-1.11.1.min.js"></script>
+    <!--[if IE 7]><html class="ie7"><![endif]-->
+    <!--[if IE 8]><html class="ie8"><![endif]-->
+    <!--[if IE 9]><html class="ie9"><![endif]-->
+
+  </head>
+  <body class="body_bg">
+     <div class="header"></div>
+  		<h4 class="login_h4">欢迎来到现金交易行！在这里您可以同区服下与其他小伙伴们直接进行虚拟交易。为了您的账户安全，请先填写相关信息！</h4>
+      <a class="back_icon"></a>
+      <p class="way_choose">请选择认证方式（二选一）：</p>
+      <div class="login_next_bg">
+        <div class="next_left">
+            <p class="login_button" style="margin: 85px 0px 0px 83px;"><img src="public/images/login_zhifubao.png" style="margin: 26px 0px 0px 0px;"></p>
+        </div>
+        <div class="next_right">
+      		<div class="list input_w204 line_height_50"><font class="w142">输入手机号码：</font>
+            <div class="input">
+              <span class="input_left"></span>
+              <input type="text">
+              <span class="input_right"></span>
+            </div>
+          </div>
+      		<div class="list input_code line_height_50"><font class="w142">输入验证码：</font>
+            <div class="input">
+              <span class="input_left"></span>
+              <input type="text">
+              <span class="input_right"></span>
+            </div>
+          <p class="send_code send_code_no">发送验证码</p></div>
+        	<div class="list input_w204 line_height_50"><font class="w142">姓名：</font>
+              <div class="input">
+                <span class="input_left"></span>
+                <input type="text">
+                <span class="input_right"></span>
+              </div>
+          </div>
+      		<div class="list input_w204 line_height_50"><font class="w142">身份证号码：</font>
+              <div class="input">
+                <span class="input_left"></span>
+                <input type="text">
+                <span class="input_right"></span>
+              </div>
+          </div>
+      		<a class="login_button" style="margin-left: 139px;margin-top:7px;">确定</a>
+          <p class="login_next_p">请正确填写实名认证信息，提现银行卡持卡人必须与实名认证信息一致，否则将无法正常提现。</p>
+        </div>
+      </div>
+  		<script type="text/javascript">
+  			$(".next_button").click(function(){
+ window.location.href="buy.html";
+});
+  		</script>
+  </body>
+</html>

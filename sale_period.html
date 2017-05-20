@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我要卖——公示期商品</title>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <link rel='stylesheet' href='public/stylesheets/style.css' />
+    <link rel='stylesheet' href='public/stylesheets/base.css' />
+    <script type="text/javascript" src="public/javascripts/jquery-1.11.1.min.js"></script>
+    <!--[if IE 7]><html class="ie7"><![endif]-->
+    <!--[if IE 8]><html class="ie8"><![endif]-->
+    <!--[if IE 9]><html class="ie9"><![endif]-->
+
+  </head>
+  <body>
+     <div class="header">
+          <ul class="nav_ul">
+             <li id="mybuy"><a href="buy.html">我要买</a></li>
+             <li class="choose" id="mySale"><a href="sale.html">我要卖</a></li>
+             <li id='myaccouny'><a href="account.html">我的账户</a></li>
+             <li id='myhelp'><a href="help.html">帮&nbsp;&nbsp;助</a></li>
+          </ul>
+      </div>
+      <div class="login_bg">
+      <div class="left_aside">
+          <span class="left_icon"><span class="icon_1"></span></span>
+          <p style="position: absolute;left: 132px;top: 68px;">公子漓江</p>
+          <p style="position: absolute;left: 132px;top: 97px;">侠盗&nbsp;&nbsp;&nbsp;&nbsp;64级</p>
+          <p style="text-indent:48px"><font>账号：</font>13915585602</p>
+          <p style="text-indent:48px"><font>区服：</font>电信一区/如梦令</p>
+          <p style="text-indent:48px"><font>当前余额：</font><span>10000.00</span>元</p>
+          <p style="text-indent:48px"><font>冻结余额：</font><span>10.00</span>元</p>
+              <h4>提示</h4>
+           <p class="left_import">为了保证交易安全，请您在第一时间设置实名认证和绑定银行卡。请注意实名填写的姓名务必与银行卡账户姓名一致，否则将无法提现！</p>
+      </div>
+      <div class="right_main">
+        <ul class="sec_menu">
+          <li style="margin-left: 31px;"><a href="sale.html">出售金币</a></li>
+          <li><a href="sale_daoju.html">出售道具</a></li>
+          <li><a href="sale_role.html">出售角色</a></li>
+          <li  class="choose"><a href="sale_period.html">出售中商品</a></li>
+        </ul>
+        <div class="buy_search">
+          <font>服务器</font>
+          <div class="mod_select">
+            <div class="select_box select_box2" style="width:101px;">
+              <span class="select_txt">全部</span><a class="selet_open"><b></b></a>
+              <div class="option">
+                <a>服务器1</a>
+                <a>服务器1</a>
+              </div>
+            </div>
+          </div>
+           <font>类型</font>
+          <div class="mod_select">
+            <div class="select_box select_box2" style="width:101px;">
+              <span class="select_txt">全部</span><a class="selet_open"><b></b></a>
+              <div class="option">
+                <a>全部</a>
+                <a>类型1</a>
+                <a>类型2</a>
+              </div>
+            </div>
+          </div>
+          <input type="text" placeholder="搜索.." class="buy_inpu2"><span class="search_icon" style="right: 204px;"></span>
+          <div style="margin-top: 6px;">价格<input type="text" class="buy_inpu1">~<input type="text" class="buy_inpu1"></div>
+        </div>
+        <div class="role_detail_bg">
+          <span class="role_bg role1"></span>
+          <p>差点没关系<font class="role_p_font">剩余时间：3天24小时50分钟</font></p>
+          <p style="top: 42px;">职业：侠盗<font style="margin-left:40px;">等级：69</font><font style="margin-left:40px;">装备评分：15826</font></p>
+          <p class="money">￥100</p>
+          <a class="right_button" href="pay_confim.html">购买</a>
+       </div>
+        <div class="role_detail_bg">
+          <div class="eq_bg eq_color1">
+              <span>
+                <img src="public/images/eq1.png">
+              </span>
+            </div>
+          <p>差点没关系<font class="role_p_font">剩余时间：3天24小时50分钟</font></p>
+          <p style="top: 42px;">职业：侠盗<font style="margin-left:40px;">等级：69</font><font style="margin-left:40px;">装备评分：15826</font></p>
+          <p class="money">￥100</p>
+          <a class="right_button" href="pay_confim.html">购买</a>
+       </div>
+       <div class="role_detail_bg">
+          <div class="gold_bg">
+                <img src="public/images/gold_bg.png">
+            </div>
+          <p>差点没关系<font class="role_p_font">剩余时间：3天24小时50分钟</font></p>
+          <p style="top: 42px;">职业：侠盗<font style="margin-left:40px;">等级：69</font><font style="margin-left:40px;">装备评分：15826</font></p>
+          <p class="money">￥100</p>
+          <a class="right_button" href="pay_confim.html">购买</a>
+       </div>
+      
+        <div class="fenye">
+                <a class="first_page"></a>
+                <a class="on_page"></a>
+                <div class="input">
+                  <span class="input_left"></span>
+                  <input type="text" style="width:47px;">
+                  <span class="input_right"></span>
+                </div>
+                <a class="next_page"></a> 
+                <a class="last_page"></a>
+            </div>
+      </div>
+
+
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+$(".select_box").click(function(event){
+event.stopPropagation();
+$(this).find(".option").toggle();
+$(this).parent().siblings().find(".option").hide();
+});
+$(document).click(function(event){
+var eo=$(event.target);
+if($(".select_box").is(":visible") && eo.attr("class")!="option" && !eo.parent(".option").length)
+$('.option').hide();
+});
+/*赋值给文本框*/
+$(".option a").click(function(){
+var value=$(this).text();
+$(this).parent().siblings(".select_txt").html(value);
+})
+})
+</script>
+</html>

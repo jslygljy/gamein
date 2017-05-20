@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的账户</title>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <link rel='stylesheet' href='public/stylesheets/style.css' />
+    <link rel='stylesheet' href='public/stylesheets/base.css' />
+    <script type="text/javascript" src="public/javascripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="public/javascripts/common.js"></script>
+    <!--[if IE 7]><html class="ie7"><![endif]-->
+    <!--[if IE 8]><html class="ie8"><![endif]-->
+    <!--[if IE 9]><html class="ie9"><![endif]-->
+
+  </head>
+  <body>
+      <div class="alert">
+        <h4>提示<a class="alert_close"></a></h4>
+        <div class="alert_list">
+          <p class="icon_dialog_p">为了您的手机安全，请先输入赤壁之战余额支付密码！</p>
+          <div class="list"><font>余额支付密码：</font><input type="text" class="input"></div>
+          <p class="prompt">密码输入错误，还有两次机会！</p>
+          <a class="confirm" href="change_phone.html" style="margin: 16px 0px 0px 94px;">确定</a>
+        </div>
+      </div>
+      <div class="alert" style="top:405px;">
+        <h4>充值<a class="alert_close"></a></h4>
+        <div class="alert_list">
+          <p class="icon_dialog_p">请您在打开的网上银行页面进行充值，充值完成前请不要关闭该窗口！</p>
+          <a class="confirm" style="margin: 16px 0px 0px 36px;">充值完成</a>
+          <a class="confirm" style="margin: 16px 0px 0px 39px;">充值遇到问题</a>
+        </div>
+      </div>
+  </body>
+  <script type="text/javascript">
+$(document).ready(function(){
+  $(".phone a").click(function(){
+      $(".mask_div").show();
+      $(".alert").fadeIn();
+    });
+    $(".close_alert").click(function(){
+      $(".mask_div").hide();
+      $(".alert").fadeOut();
+    });
+});
+</script>
+</html>
